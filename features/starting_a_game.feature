@@ -1,3 +1,4 @@
+
 Feature: Starting the game
   In order to play battleships
   As a nostalgic player
@@ -7,5 +8,9 @@ Feature: Starting the game
     Given I am on the homepage
     When I follow "New Game"
     Then I should see "Would you like to play Battleships?!"
-    When I enter my name
+    
+
+  Scenario: Registration
+  	When I type in name
+  	Then I should see "Thank you Bill, you are now registered"
 

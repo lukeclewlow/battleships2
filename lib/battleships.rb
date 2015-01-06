@@ -6,7 +6,7 @@ class BattleShips < Sinatra::Base
   end
 
   get '/newgame' do
-  	# @name = Player.new
+  	@name = params[:player]
   	erb :newgame
   end
 
