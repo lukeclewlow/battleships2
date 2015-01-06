@@ -1,5 +1,9 @@
 #BattleShips
 
+Game engine cloned from Stephen. The aim is to use this engine to build a web app out of it by the end of the week.
+
+
+
 The game is ready to play when theres are two players initialized with a board each and each board has 5 ships placed. 
 
 By default it is player1's go first and after each shot it will switch the turns until there is a winner. 
