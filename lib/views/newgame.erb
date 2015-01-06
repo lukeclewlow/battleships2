@@ -1,10 +1,10 @@
 
 <% if @name %>
-Thankyou <%= @name %>!
+Thankyou <%= @name %>!, you are now registered
 <% else %>
 	<form action="/newgame">
-		What's your name?
-		<input type="text" name="player">
+		Would you like to play Battleships?!
+		<input type="text" name="name">
 		<input type="submit">
 	</form>
 <% end %>

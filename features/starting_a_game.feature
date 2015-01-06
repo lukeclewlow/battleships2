@@ -11,6 +11,6 @@ Feature: Starting the game
     
 
   Scenario: Registration
-  	When I type in name
+    When I enter "Bill"
   	Then I should see "Thank you Bill, you are now registered"
 
