@@ -1,6 +1,6 @@
 #BattleShips
 
-Game engine cloned from Stephen. The aim is to use this engine to build a web app out of it by the end of the week.
+Game engine cloned from Stephen. The aim is to use this engine to build a web app out of it by the end of the week...
 
 
 
