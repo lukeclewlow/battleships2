@@ -6,6 +6,7 @@ class BattleShips < Sinatra::Base
   end
 
   get '/newgame' do
+  	# @name = Player.new
   	erb :newgame
   end
 
