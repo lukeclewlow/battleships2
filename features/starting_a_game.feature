@@ -14,10 +14,9 @@ Feature: Starting the game
     And click on submit
     Then I should see "Welcome to Battleships"
 
-  Scenario: Game screen (no player entered)
-    Given I am on newgame page
-    And click on submit with no name
-    Then I should see "Please enter name" And submit button
-
+  Scenario: Playing the game
+    Given I am on the game page
+    And I click fire
+    Then I should see "Miss"
 
 
