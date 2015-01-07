@@ -16,7 +16,8 @@ Feature: Starting the game
 
   Scenario: Playing the game
     Given I am on the game page
-    And I click fire
+    And I click Fire
+    Given I am on the miss page
     Then I should see "Miss"
 
 

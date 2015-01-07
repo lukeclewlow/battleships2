@@ -20,3 +20,18 @@ Given(/^click on submit$/) do
   click_on("Submit")
 end
 
+Given(/^I am on the game page$/) do
+ visit '/game'
+end
+
+Given(/^I click Fire$/) do
+ click_on("Fire")
+end
+
+Given(/^I am on the miss page$/) do
+  visit'/miss'
+end
+
+
+
+
