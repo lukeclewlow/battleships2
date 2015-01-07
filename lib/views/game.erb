@@ -1,3 +1,21 @@
-<form action="/miss" method="get">
+<table border="1" style="width:5%">
+  <tr>
+    <td>A1</td>
+    <td>A2</td> 
+  </tr>
+  <tr>
+    <td>B1</td>
+    <td>B2</td>
+  </tr>
+</table>
+
+<% if @coord %>
+Hit
+
+<% else %>
+<form action="/game">
+<input type="text" name="coord">
 <button type="submit">Fire</button>
 </form>
+
+<% end %>

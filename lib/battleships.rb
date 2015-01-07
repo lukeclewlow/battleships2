@@ -11,6 +11,7 @@ class BattleShips < Sinatra::Base
   end
 
   get '/game' do
+    @coord = params[:coord]
   	erb :game
   end
 
