@@ -22,6 +22,7 @@ class BattleShips < Sinatra::Base
   get '/game' do
     @board = Board.new(Cell)
     @grid = @board.grid
+    @keys = @grid.keys
     @coord = params[:coord]
   	erb :game
   end

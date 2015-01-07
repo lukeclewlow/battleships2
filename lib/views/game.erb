@@ -1,8 +1,11 @@
 <table border="1" style="width:5%">
 
-<% @grid.keys.each do |board| %>
+
+<% @keys.each_slice(10) do |slice| %>
   <tr>
+  <% slice.each do |board| %>
     <td><%= board %></td>
+    <%end%>
   </tr>
 <% end %>
 </table>
