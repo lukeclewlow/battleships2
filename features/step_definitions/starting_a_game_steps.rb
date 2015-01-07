@@ -32,6 +32,18 @@ Given(/^I am on the miss page$/) do
   visit'/miss'
 end
 
+Then(/^I should see a grid$/) do
+  page.has_selector?('table tr')
+end
+
+Then(/^I enter a coordinate$/) do
+  fill_in('coord', with: 'coord')
+end
+
+Then(/^click on Fire$/) do
+  pending # express the regexp above with the code you wish you had
+end
+
 
 
 

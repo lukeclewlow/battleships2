@@ -24,7 +24,7 @@ Feature: Starting the game
     Given I am on the game page
     Then I should see a grid
     And I enter a coordinate
-    And click on Fire
+    And I click Fire
     Then I should see "Miss"
 
 
