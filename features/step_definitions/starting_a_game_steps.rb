@@ -4,16 +4,20 @@ Given(/^I am on the homepage$/) do
 	visit '/'
 end
 
-When(/^I follow "(.*?)"$/) do |arg1|
-  visit '/newgame'
+Then(/^I should see "(.*?)"$/) do |text|
+  # save_and_open_page
+  expect(page).to have_content text
 end
 
-Then(/^I should see "(.*?)"$/) do |arg1|
-  page.has_content?('Would you like to play Battleships?!')
+Given(/^I am on newgame page$/) do
+ 	visit '/newgame'
 end
 
-When(/^I enter (.*)$/) do |name|
-		visit '/newgame'
-	  fill_in('name', with: name)
-	  page.has_content?('name')
+Given(/^I enter my name$/) do
+  fill_in('name', with: 'name')
 end
+
+Given(/^click on submit$/) do
+  click_on("Submit")
+end
+
