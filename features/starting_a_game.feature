@@ -28,6 +28,10 @@ Feature: Starting the game
     Then I should see "Miss"
 
   Scenario: 
+    Given I am on the game page
+    And I enter a coordinate "A5"
+    And I click Fire
+    Then I should see "Hit"
 
 
 

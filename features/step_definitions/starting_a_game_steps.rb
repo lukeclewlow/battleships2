@@ -40,6 +40,11 @@ Then(/^I enter a coordinate$/) do
   fill_in('coord', with: 'coord')
 end
 
+Given(/^I enter a coordinate "(.*?)"$/) do |arg1|
+  fill_in('coord', with: 'coord')
+end
+
+
 Then(/^click on Fire$/) do
   pending # express the regexp above with the code you wish you had
 end
