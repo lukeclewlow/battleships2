@@ -27,6 +27,10 @@ Feature: Starting the game
     And I click Fire
     Then I should see "Miss"
 
+  Scenario: 
+
+
+
 
 
 

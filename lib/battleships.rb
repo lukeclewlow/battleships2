@@ -1,16 +1,27 @@
 require 'sinatra/base'
+require './lib/game.rb'
+require './lib/player.rb'
+require './lib/board.rb'
+require './lib/cell.rb'
 
 class BattleShips < Sinatra::Base
+
+  game = Game.new
+
   get '/' do
     erb :index
   end
 
   get '/newgame' do
-  	@name = params[:name]
+    @player = Player.new
+  	@player.name = params[:name]
+    game.player1 = @player
   	erb :newgame
   end
 
   get '/game' do
+    @board = Board.new
+    @board.grid
     @coord = params[:coord]
   	erb :game
   end
