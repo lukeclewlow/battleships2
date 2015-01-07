@@ -5,11 +5,11 @@ Given(/^I am on the homepage$/) do
 end
 
 When(/^I follow "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+  visit '/newgame'
 end
 
 Then(/^I should see "(.*?)"$/) do |arg1|
-  pending # express the regexp above with the code you wish you had
+  page.has_content?('Would you like to play Battleships?!')
 end
 
 When(/^I enter (.*)$/) do |name|
