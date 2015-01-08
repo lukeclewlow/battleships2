@@ -41,13 +41,9 @@ Then(/^I enter a coordinate$/) do
 end
 
 Given(/^I enter a coordinate "(.*?)"$/) do |arg1|
-  fill_in('coord', with: 'coord')
+  fill_in('coord', with: arg1)
 end
 
-
-Then(/^click on Fire$/) do
-  pending # express the regexp above with the code you wish you had
-end
 
 
 

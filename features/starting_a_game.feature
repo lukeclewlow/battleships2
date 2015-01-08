@@ -14,6 +14,11 @@ Feature: Starting the game
     And click on submit
     Then I should see "Welcome to Battleships"
 
+  Scenario: Placing ships
+    Given I am on loadgame page
+    And I click on submit
+    Then the ship should be placed on the board
+
   Scenario: Playing the game
     Given I am on the game page
     And I click Fire
