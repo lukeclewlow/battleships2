@@ -1,12 +1,41 @@
-#BattleShips
+# Battleships-Web
 
-Game engine cloned from Stephen. The aim is to use this engine to build a web app out of it by the end of the week...
+##What is it? 
+An online visual version of the classic game Battleships. The game engine has been cloned from [Stephen Lloyd](https://github.com/stephenlloyd) 
 
+##Objectives?
+* Learn how to use Cucumber as a feature testing tool
+* Learn how to use Sinatra to set up a server
+* Learn how to integrate back-end and front-end
+* Learn some basic html and css
 
+###To run:
 
-The game is ready to play when theres are two players initialized with a board each and each board has 5 ships placed. 
+```
+bundle install
+```
 
-By default it is player1's go first and after each shot it will switch the turns until there is a winner. 
+Tests:
+```
+rspec
+```
+[Localhost server](localhost:9393):
+```
+shotgun
+```
 
-A game_setup.rb file has been added which sets up the game to a ready state placeing each ship from colums A through to E vertically. 
-	
+##Brief
+
+* Allow a player to type in their name and register to play
+* Lay out a board on the screen on which a player can place their ships
+* Integrate all of this properly with the back-end logic
+
+##Technologies
+* Sinatra
+* Ruby
+* RSpec
+* Cucumber
+
+##Contributors
+[Kieran Goodacre](https://github.com/kierangoodacre)  
+[Luke Clewlow](https://github.com/lukeclewlow)  
