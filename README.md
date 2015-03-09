@@ -8,6 +8,7 @@ An online visual version of the classic game Battleships. The game engine has be
 * Learn how to use Sinatra to set up a server
 * Learn how to integrate back-end and front-end
 * Learn some basic html and css
+* Learn the basics of embedding ruby in web pages
 
 ###To run:
 
